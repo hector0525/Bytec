@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <title>BYTEC - Princial</title>
+</head>
+<body>
+    <section id="seccion1">
+        <div class="tema-desc">
+            <div class="con">
+                <h1>BYTEC</h1>
+                <p>Soluciones a tu alcances</p>
+            </div>
+        </div>
+    </section>
+    <section id="seccion2">
+        <div class="card-container">
+            <!-- Tarjeta 1 -->
+            <div class="card">
+                <center><img src="img/ser1.jpg" alt="Imagen 1"></center>
+                <div class="card-content">
+                    <center><h3>Reparación de celulares, computadoras e impresoras</h3></center><br>
+                    <p>Servicio técnico especializado en diagnóstico y reparación de dispositivos móviles, ordenadores e impresoras. Abordamos problemas comunes como pantallas rotas, baterías, rendimiento lento, errores de software y problemas de impresión, asegurando que tu equipo funcione óptimamente.</p>
+                </div>
+                <center><button onclick="enviarCorreo()">Contáctanos</button></center>
+            </div>
+        
+            <!-- Tarjeta 2 -->
+            <div class="card">
+                <center><img src="img/ser2.png" alt="Imagen 2"></center>
+                <div class="card-content">
+                    <center><h3>Soluciones de Hardware / Software</h3></center><br>
+                    <p>Ofrecemos soluciones integrales de hardware y software para optimizar el rendimiento y la funcionalidad de tus dispositivos. Desde actualizaciones de componentes físicos hasta la instalación de sistemas operativos y software especializado, adecuada para tus necesidades.</p>
+                </div>
+                <center><button onclick="enviarCorreo()">Contáctanos</button></center>
+            </div>
+        
+            <!-- Tarjeta 3 -->
+            <div class="card">
+                <center><img src="img/ser3.jpg" alt="Imagen 3"></center>
+                <div class="card-content">
+                    <center><h3>Recargas y pagos de servicios</h3></center><br>
+                    <p>Servicio de recargas y pagos de servicios digitales para facilitar la gestión de tus cuentas de telefonía, televisión, electricidad y más. Realiza recargas y pagos de manera rápida, segura y en un solo lugar con la confianza y rapidez sin necesidad de ir a un lugar especifico con esta comodidad más eficiente.
+                    </p>
+                </div>
+                <button onclick="enviarCorreo()">Contáctanos</button>
+            </div>
+        
+            <!-- Tarjeta 4 -->
+            <div class="card">
+                <center><img src="img/ser4.jpg" alt="Imagen 4"></center>
+                <div class="card-content">
+                    <h3>Desarrollo de software, sitios web y aplicaciones Android</h3><br>
+                    <p>Creamos soluciones a la medida para negocios, incluyendo software personalizado, sitios web atractivos y aplicaciones Android funcionales. Nos enfocamos en ofrecer productos de alta calidad que cumplan con los objetivos de tu negocio y mejoren la experiencia del usuario con una calidad de sitios y trabajos para un buen uso general y la funcionalidad.</p>
+                </div>
+                <center><button onclick="enviarCorreo()">Contáctanos</button></center>
+            </div>
+        
+            <!-- Tarjeta 5 -->
+            <div class="card">
+                <center><img src="img/ser5.jpg" alt="Imagen 5"></center>
+                <div class="card-content">
+                    <h3>Gestión de bases de datos</h3><br>
+                    <p>Ofrecemos servicios de diseño, implementación y mantenimiento de bases de datos, asegurando que la información de tu empresa esté bien organizada, segura y siempre disponible. Simplifica la administración de datos y mejora la toma de decisiones con un sistema de base de datos eficiente.</p>
+                </div>
+                <center><button onclick="enviarCorreo()">Contáctanos</button></center>
+            </div>
+        
+            <!-- Tarjeta 6 -->
+            <div class="card">
+                <center><img src="img/ser6.PNG" alt="Imagen 6"></center>
+                <div class="card-content">
+                    <center><h3>Mantenimiento y desarrollo de software para empresas, escuelas y negocios</h3></center><br>
+                    <p>Nos especializamos en el mantenimiento y desarrollo de soluciones de software para distintos sectores, como empresas, instituciones educativas y negocios. Garantizamos calidad y funcionalidad en el trabajo.</p>
+                </div>
+                <center><button onclick="enviarCorreo()">Contáctanos</button></center>
+            </div>
+        </div>
+        
+        <script>
+            function enviarCorreo() {
+                const correo = "bytecsoluciones78@gmail.com";  // Reemplaza con tu correo
+                const asunto = "Consulta de Información";
+                const cuerpo = "Hola, estoy interesado en recibir más información sobre su servicio.";
+        
+                window.location.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${correo}&su=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+            }
+        </script>
+
+        <!-- Footer -->
+<footer class="footer">
+    <div class="footer-left">
+        <p>Gmail: bytecsoluciones78@gmail.com</p>
+        <p>Teléfono: 7201943146 </p>
+    </div>
+    <div class="footer-right">
+        <p>BYTEC</p>
+        <p>&copy; Derechos reservados 2024</p>
+    </div>
+</footer>
+
+
+    </section>
+</body>
+</html>

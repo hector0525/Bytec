@@ -1,0 +1,175 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f150;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f1f1f150;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 123, 255);
+}
+
+
+#seccion1{
+    background-image: url(../img/Fondo.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+#seccion1 .tema-desc{
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 50px;   
+}
+
+#seccion1 .tema-desc .con{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+#seccion1 .tema-desc .con h1{
+    font-size: 120px;
+    color: white;
+    text-shadow: 1px 1px 8px black;
+}
+
+#seccion1 .tema-desc .con p{
+    font-size: 50px;
+    color: white;
+    text-shadow: 1px 1px 8px black;
+}
+
+#seccion2 {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: white;
+            margin: 0;
+            height: auto;
+            flex-direction: column;
+        }
+
+        /* Contenedor de las tarjetas */
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+            box-sizing: border-box;
+        }
+
+        /* Estilos de cada tarjeta */
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: justify;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Estilos para la imagen */
+        .card img {
+            width: 150px;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+        }
+
+        /* Estilos para el contenido de texto */
+        .card-content {
+            margin: 15px 0;
+            font-size: 1em;
+            color: #333;
+        }
+
+        /* Estilos para el botón */
+        .card button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 1em;
+        }
+
+        .card button:hover {
+            background-color: #0056b3;
+        }
+
+/* Estilos generales del footer */
+ #seccion2 .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: #f1f1f1;
+    font-size: 0.9em;
+    width: 100%;
+}
+
+/* Estilos para la parte izquierda */
+#seccion2 .footer-left {
+    text-align: left;
+}
+
+#seccion2 .footer-left a {
+    color: #f1f1f1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#seccion2 .footer-left a:hover {
+    color: #bbb;
+}
+
+/* Estilos para la parte derecha */
+#seccion2 .footer-right {
+    text-align: right;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 600px) {
+    #seccion2 .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    #seccion2 .footer-left, .footer-right {
+        margin: 10px 0;
+    }
+}
